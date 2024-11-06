@@ -11,5 +11,26 @@
 
 **QCRAFT Quantum Developer Interface** is a DevOps-oriented web interface for designing, managing, and deploying quantum circuits across multiple quantum computing platforms. QCRAFT integrates tools like Quirk for circuit design, Docker for containerized deployments, and supports IBM Quantum and AWS Braket. The interface provides users with a seamless quantum development environment for continuous deployment, enabling efficient execution and visualization of quantum services.
 
+## Components and Interaction Overview
+QCRAFT Quantum Developer Interface consists of multiple integrated components to provide a seamless DevOps workflow for quantum computing:
+
+* Quirk Integration: Enables visual circuit design through a drag-and-drop interface. Circuits designed in Quirk are compatible with the QCRAFT execution pipeline.
+  
+* Platform Translators: QCRAFT translates circuits to formats compatible with IBM Quantum (Qiskit) and AWS Braket, allowing cross-platform deployment.
+  
+* Docker Containerization: Docker is used to create isolated environments, ensuring that dependencies and configurations remain consistent across different deployment setups.
+  
+* Execution Manager: QCRAFT handles the execution of circuits on the specified backend, retrieves results, and enables result visualization and analysis directly in the interface.
+
+**Workflow**
+* Design: Users create quantum circuits using Quirk or a coding library (Qiskit, Braket).
+  
+* Platform Selection: Select the quantum backend (e.g., IBM or AWS).
+  
+* Deployment: QCRAFT deploys the circuit in a Docker container, ensuring environment consistency.
+  
+* Execution & Analysis: Circuits are executed on the selected platform, and results are retrieved for review and further analysis within QCRAFT.
+
 ## License
 QCRAFT AutoSchedulQ is licensed under the [MIT License](https://github.com/Qcraft-UEx/QCRAFT/blob/main/LICENSE)
+
